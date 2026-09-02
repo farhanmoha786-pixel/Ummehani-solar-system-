@@ -1,1 +1,36 @@
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,Helvetica,sans-serif;color:#172033;line-height:1.6;background:#fff}.container{width:min(1120px,92%);margin:auto}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #e8edf3}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:20px;font-weight:800;color:#172033;text-decoration:none}.logo span{margin-right:6px}.nav nav{display:flex;gap:26px}.nav nav a{color:#344054;text-decoration:none;font-weight:600}.nav nav a:hover{color:#f59e0b}.menu{display:none;border:0;background:none;font-size:27px}.hero{background:linear-gradient(135deg,#fff8e8,#eef9ff);padding:82px 0}.hero-content{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}.eyebrow{font-size:13px;font-weight:800;letter-spacing:2px;color:#e68a00;margin-bottom:10px}.hero h1{font-size:clamp(40px,6vw,68px);line-height:1.08;margin-bottom:20px}.hero h1 span{color:#e68a00}.hero-text{font-size:19px;color:#536071;max-width:650px}.buttons{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}.btn{padding:13px 23px;border-radius:10px;text-decoration:none;font-weight:800}.primary{background:#f59e0b;color:#fff}.secondary{border:2px solid #172033;color:#172033}.solar-card{min-height:350px;border-radius:28px;background:#10243b;position:relative;overflow:hidden;padding:38px;color:white;box-shadow:0 25px 60px rgba(16,36,59,.2)}.sun{font-size:75px;position:absolute;right:25px;top:15px}.panel{position:absolute;width:145px;height:95px;background:linear-gradient(135deg,#2776a9,#122c4a);border:3px solid #9fd5ed;transform:skewY(-12deg);box-shadow:0 0 20px rgba(99,205,255,.15)}.p1{left:38px;top:105px}.p2{left:180px;top:145px}.p3{left:70px;top:210px}.solar-card h3{position:absolute;bottom:55px;font-size:27px}.solar-card p{position:absolute;bottom:25px;color:#bcd0e3}.section{padding:85px 0}.section h2{font-size:40px;margin-bottom:35px}.light{background:#f6f9fc}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card,.plan,.why{background:#fff;border:1px solid #e6ebf1;border-radius:16px;padding:28px;box-shadow:0 8px 25px rgba(16,24,40,.05)}.icon{font-size:36px;margin-bottom:15px}.card h3{margin-bottom:8px}.card p,.plan p,.about p{color:#667085}.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.plan{position:relative}.plan h3{font-size:30px}.plan a{display:inline-block;margin-top:22px;color:#d97706;font-weight:800;text-decoration:none}.featured{border:2px solid #f59e0b}.badge{position:absolute;right:18px;top:18px;background:#f59e0b;color:#fff;padding:4px 9px;border-radius:20px;font-size:10px;font-weight:800}.about{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}.about h2{margin-bottom:18px}.location{margin-top:22px;font-weight:700;color:#344054!important}.why{background:#10243b;color:#fff}.why h3{font-size:25px;margin-bottom:15px}.why p{color:#d7e1eb;margin:9px 0}.contact{background:#f59e0b;padding:55px 0}.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.contact h2{font-size:40px}.contact p{color:#5c3b05}.contact-actions{display:flex;flex-direction:column;gap:10px}.contact-link{display:block;background:#fff;color:#172033;text-decoration:none;padding:13px 18px;border-radius:10px;font-weight:800}.contact-link.whatsapp{background:#172033;color:#fff}.address{padding:8px 0;font-weight:700}footer{background:#0d1b2a;color:#c8d2dc;padding:25px 0}.footer-inner{display:flex;justify-content:space-between;gap:15px;font-size:14px}.floating-whatsapp{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#19a974;color:white;text-decoration:none;display:grid;place-items:center;font-size:28px;box-shadow:0 10px 25px rgba(0,0,0,.2);z-index:30}@media(max-width:800px){.menu{display:block}.nav nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:15px 5%;flex-direction:column;gap:12px;border-bottom:1px solid #ddd}.nav nav.open{display:flex}.hero{padding:55px 0}.hero-content,.about,.contact-box{grid-template-columns:1fr;gap:35px}.solar-card{min-height:300px}.cards{grid-template-columns:1fr 1fr}.plans{grid-template-columns:1fr}.section{padding:60px 0}.section h2,.contact h2{font-size:32px}.footer-inner{flex-direction:column}.logo{font-size:17px}}@media(max-width:500px){.cards{grid-template-columns:1fr}.hero h1{font-size:42px}.solar-card{min-height:270px}.panel{transform:scale(.82) skewY(-12deg);transform-origin:left top}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#17212b;background:#fff}
+.container{width:min(1100px,92%);margin:auto}
+.header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e7e7e7}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:1.25rem;font-weight:800;text-decoration:none;color:#17212b}
+nav{display:flex;gap:24px}
+nav a{color:#17212b;text-decoration:none;font-weight:600}
+nav a:hover{color:#16833d}
+.menu{display:none;border:0;background:transparent;font-size:1.6rem}
+.hero{min-height:560px;display:flex;align-items:center;background:linear-gradient(135deg,#f0fff5,#f8fbff)}
+.hero-content{padding:80px 0}
+.eyebrow{font-weight:800;letter-spacing:2px;margin-bottom:12px}
+h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.05;max-width:850px;margin-bottom:22px}
+.hero-text{font-size:1.15rem;max-width:680px;color:#4b5965}
+.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:800}
+.primary{background:#16833d;color:#fff}
+.secondary{border:2px solid #16833d;color:#16833d;background:#fff}
+.section{padding:80px 0}
+.alt{background:#f6f8fa}
+h2{font-size:2.2rem;margin-bottom:25px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{padding:28px;border:1px solid #e2e7eb;border-radius:14px;background:#fff;box-shadow:0 6px 20px rgba(0,0,0,.05)}
+.card h3{margin-bottom:10px;font-size:1.3rem}
+.narrow{max-width:800px}
+.contact{text-align:center;background:#eefaf2}
+footer{padding:28px 0;background:#17212b;color:#fff;text-align:center}
+@media(max-width:700px){
+  .menu{display:block}
+  nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;padding:18px 4%;flex-direction:column;border-bottom:1px solid #ddd}
+  nav.open{display:flex}
+  .cards{grid-template-columns:1fr}
+  .hero{min-height:500px}
+}
