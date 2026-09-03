@@ -36,7 +36,28 @@ body{
  line-height:1.6;
  overflow-x:hidden;
 }
+body::before{
+  content:"UMMEHANI\A SOLAR SYSTEM";
+  white-space:pre;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) rotate(-12deg);
+  font-size:clamp(55px,12vw,170px);
+  font-weight:900;
+  line-height:.9;
+  text-align:center;
+  letter-spacing:4px;
+  color:rgba(255,255,255,.035);
+  z-index:0;
+  pointer-events:none;
+  width:100%;
+}
 
+body > *{
+  position:relative;
+  z-index:1;
+}
 :root{
  --gold:#ffc928;
  --orange:#ff9417;
