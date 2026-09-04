@@ -1,1367 +1,638 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Ummehani Solar System | Shahjahanpur</title>
 
-<meta name="description"
-content="Ummehani Solar System - Solar Panel, On Grid, Off Grid and Hybrid Solar Solutions in Shahjahanpur, Uttar Pradesh.">
+<meta name="description" content="Ummehani Solar System - Solar solutions for homes, shops, offices and businesses in Shahjahanpur, Uttar Pradesh.">
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#222;line-height:1.6}
+a{text-decoration:none}
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+.top{
+background:#096b3b;color:white;padding:8px 6%;
+display:flex;justify-content:space-between;font-size:13px
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    color:#202124;
-    background:#fff;
-    line-height:1.6;
-}
-
-a{
-    text-decoration:none;
-}
-
-/* TOP BAR */
-
-.topbar{
-    background:#116b3b;
-    color:#fff;
-    padding:8px 6%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    font-size:14px;
-}
-
-.topbar a{
-    color:#fff;
-}
-
-/* NAVBAR */
-
-.navbar{
-    height:76px;
-    background:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 6%;
-    box-shadow:0 2px 15px rgba(0,0,0,.08);
-    position:sticky;
-    top:0;
-    z-index:999;
+.nav{
+height:75px;background:white;padding:0 6%;
+display:flex;align-items:center;justify-content:space-between;
+box-shadow:0 2px 15px #00000018;position:sticky;top:0;z-index:99
 }
 
 .logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
+display:flex;align-items:center;gap:10px;color:#126b3e;font-weight:bold;font-size:19px
 }
-
-.logo-icon{
-    width:45px;
-    height:45px;
-    background:#fff2c9;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:27px;
+.logo i{
+background:#fff0bd;border-radius:50%;width:45px;height:45px;
+display:flex;align-items:center;justify-content:center;font-style:normal;font-size:25px
 }
+.logo span{color:#f3a400}
 
-.logo-text{
-    font-size:20px;
-    font-weight:700;
-    color:#126b3e;
-}
-
-.logo-text span{
-    color:#f5a400;
-}
-
-.menu{
-    display:flex;
-    align-items:center;
-    gap:28px;
-}
-
-.menu a{
-    color:#333;
-    font-weight:600;
-    font-size:15px;
-}
-
-.menu a:hover{
-    color:#16834b;
-}
-
-.enquiry-btn{
-    background:#16834b;
-    color:#fff !important;
-    padding:11px 19px;
-    border-radius:7px;
-}
-
-/* HERO */
+.menu{display:flex;gap:25px;align-items:center}
+.menu a{color:#333;font-size:14px;font-weight:bold}
+.quote{background:#16834b!important;color:white!important;padding:11px 18px;border-radius:7px}
 
 .hero{
-    min-height:550px;
-    background:
-    linear-gradient(90deg,rgba(8,66,38,.92),rgba(8,66,38,.45)),
-    url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=85");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    padding:70px 7%;
+min-height:570px;padding:80px 7%;
+display:flex;align-items:center;color:white;
+background:
+linear-gradient(90deg,#064b2ee8,#064b2e55),
+url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=85");
+background-size:cover;background-position:center
 }
 
-.hero-content{
-    max-width:720px;
-    color:#fff;
+.hero-content{max-width:720px}
+.small{color:#ffd166;font-weight:bold;letter-spacing:1px;margin-bottom:12px}
+.hero h1{font-size:53px;line-height:1.1;margin-bottom:20px}
+.hero h1 span{color:#ffd166}
+.hero p{font-size:18px;margin-bottom:28px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:14px 23px;border-radius:7px;font-weight:bold;display:inline-block}
+.yellow{background:#f5a400;color:white}
+.white{background:white;color:#126b3e}
+
+.stats{
+padding:0 7%;margin-top:-35px;position:relative
 }
-
-.hero-small{
-    color:#ffd166;
-    font-weight:bold;
-    letter-spacing:1px;
-    margin-bottom:12px;
+.statsbox{
+background:white;border-radius:15px;padding:25px;
+box-shadow:0 8px 30px #0002;
+display:grid;grid-template-columns:repeat(4,1fr)
 }
+.stat{text-align:center;border-right:1px solid #eee}
+.stat:last-child{border:0}
+.stat b{display:block;color:#16834b;font-size:26px}
+.stat small{color:#777}
 
-.hero h1{
-    font-size:52px;
-    line-height:1.15;
-    margin-bottom:20px;
-}
-
-.hero h1 span{
-    color:#ffd166;
-}
-
-.hero p{
-    font-size:18px;
-    max-width:650px;
-    margin-bottom:28px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    padding:13px 23px;
-    border-radius:7px;
-    font-weight:bold;
-    display:inline-block;
-}
-
-.btn-yellow{
-    background:#f5a400;
-    color:#fff;
-}
-
-.btn-white{
-    background:#fff;
-    color:#126b3e;
-}
-
-/* ABOUT */
-
-.section{
-    padding:75px 7%;
-}
-
+.section{padding:75px 7%}
 .about{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
+display:grid;grid-template-columns:1fr 1fr;
+gap:60px;align-items:center
 }
+.about img{width:100%;border-radius:15px}
+.about h5{color:#f3a400;margin-bottom:7px}
+.about h2,.title h2{color:#126b3e;font-size:35px;margin-bottom:15px}
+.about p{color:#666;margin-bottom:15px}
+.check{list-style:none}
+.check li{margin:9px 0;font-weight:bold}
 
-.about-image img{
-    width:100%;
-    border-radius:15px;
-    display:block;
+.green-section{background:#f3faf7}
+.title{text-align:center;margin-bottom:42px}
+.title p{color:#777}
+
+.cards{
+display:grid;grid-template-columns:repeat(4,1fr);gap:20px
 }
-
-.about-content h2{
-    font-size:36px;
-    color:#126b3e;
-    margin-bottom:18px;
+.card{
+background:white;padding:27px 18px;border-radius:13px;
+text-align:center;box-shadow:0 5px 20px #0000000d
 }
+.icon{font-size:40px;margin-bottom:10px}
+.card h3{color:#126b3e;margin-bottom:7px}
+.card p{font-size:14px;color:#777}
 
-.about-content h4{
-    color:#f5a400;
-    margin-bottom:8px;
+.services{
+display:grid;grid-template-columns:repeat(3,1fr);gap:24px
 }
-
-.about-content p{
-    color:#666;
-    margin-bottom:20px;
+.service{
+padding:28px;background:white;border:1px solid #eee;
+border-radius:13px;box-shadow:0 5px 20px #0000000d
 }
-
-.check-list{
-    list-style:none;
+.service .icon{
+width:58px;height:58px;background:#e7f7ee;
+border-radius:12px;display:flex;align-items:center;
+justify-content:center
 }
+.service h3{color:#126b3e;margin-bottom:8px}
+.service p{color:#777;font-size:14px;margin-bottom:12px}
+.service a{color:#16834b;font-weight:bold}
 
-.check-list li{
-    margin:12px 0;
-    font-weight:600;
+.subsidy{
+padding:60px 7%;text-align:center;color:white;
+background:linear-gradient(100deg,#096b3b,#16834b)
 }
-
-/* WHY */
-
-.why{
-    background:#f4faf7;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:45px;
-}
-
-.section-title h2{
-    font-size:34px;
-    color:#126b3e;
-}
-
-.section-title p{
-    color:#777;
-    margin-top:7px;
-}
-
-.why-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
-
-.why-card{
-    background:#fff;
-    padding:28px 20px;
-    text-align:center;
-    border-radius:12px;
-    box-shadow:0 4px 18px rgba(0,0,0,.06);
-}
-
-.why-icon{
-    font-size:40px;
-    margin-bottom:12px;
-}
-
-.why-card h3{
-    color:#126b3e;
-    margin-bottom:8px;
-}
-
-.why-card p{
-    color:#777;
-    font-size:14px;
-}
-
-/* SERVICES */
-
-.services-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.service-card{
-    border:1px solid #eee;
-    background:#fff;
-    border-radius:13px;
-    padding:30px;
-    box-shadow:0 5px 20px rgba(0,0,0,.06);
-    transition:.25s;
-}
-
-.service-card:hover{
-    transform:translateY(-5px);
-}
-
-.service-icon{
-    width:58px;
-    height:58px;
-    border-radius:12px;
-    background:#e8f7ef;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:29px;
-    margin-bottom:18px;
-}
-
-.service-card h3{
-    color:#126b3e;
-    margin-bottom:9px;
-}
-
-.service-card p{
-    color:#777;
-    font-size:15px;
-    margin-bottom:15px;
-}
-
-.read-more{
-    color:#16834b;
-    font-weight:bold;
-}
-
-/* PLANS */
+.subsidy h2{font-size:34px;margin-bottom:10px}
+.subsidy p{max-width:750px;margin:0 auto 22px}
 
 .plans{
-    background:#f4faf7;
+display:grid;grid-template-columns:repeat(4,1fr);gap:20px
 }
-
-.plan-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
-
 .plan{
-    background:#fff;
-    border-radius:14px;
-    padding:28px 20px;
-    text-align:center;
-    box-shadow:0 4px 18px rgba(0,0,0,.06);
+background:white;padding:28px 18px;text-align:center;
+border-radius:14px;border-top:4px solid #16834b;
+box-shadow:0 5px 20px #0001
 }
-
-.plan h3{
-    color:#126b3e;
-    font-size:22px;
+.plan h3{font-size:24px;color:#126b3e}
+.price{color:#f3a400;font-size:21px;font-weight:bold;margin:10px}
+.plan ul{list-style:none;color:#666;font-size:14px}
+.plan li{padding:4px}
+.plan a{
+display:block;background:#16834b;color:white;
+padding:10px;border-radius:7px;margin-top:15px;font-weight:bold
 }
-
-.plan-price{
-    color:#f5a400;
-    font-size:25px;
-    font-weight:bold;
-    margin:12px 0;
-}
-
-.plan ul{
-    list-style:none;
-    color:#666;
-    font-size:14px;
-}
-
-.plan li{
-    padding:5px;
-}
-
-.plan-btn{
-    display:block;
-    margin-top:18px;
-    background:#16834b;
-    color:#fff;
-    padding:10px;
-    border-radius:7px;
-    font-weight:bold;
-}
-
-/* HOW IT WORKS */
 
 .steps{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
+display:grid;grid-template-columns:repeat(4,1fr);gap:20px
 }
-
-.step{
-    text-align:center;
-    position:relative;
+.step{text-align:center}
+.number{
+width:65px;height:65px;border-radius:50%;background:#16834b;
+color:white;display:flex;align-items:center;justify-content:center;
+margin:0 auto 15px;font-size:22px;font-weight:bold
 }
-
-.step-number{
-    width:65px;
-    height:65px;
-    border-radius:50%;
-    background:#16834b;
-    color:#fff;
-    margin:0 auto 15px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:23px;
-    font-weight:bold;
-}
-
-.step h3{
-    color:#126b3e;
-    margin-bottom:7px;
-}
-
-.step p{
-    color:#777;
-    font-size:14px;
-}
-
-/* CTA */
+.step h3{color:#126b3e}
+.step p{font-size:14px;color:#777}
 
 .cta{
-    background:
-    linear-gradient(90deg,#116b3b,#16834b);
-    color:#fff;
-    text-align:center;
-    padding:65px 7%;
+background:#096b3b;color:white;text-align:center;padding:65px 7%
 }
+.cta h2{font-size:36px;margin-bottom:10px}
+.cta p{margin-bottom:22px}
 
-.cta h2{
-    font-size:36px;
-    margin-bottom:12px;
+.contact{
+display:grid;grid-template-columns:1fr 1fr;gap:35px
 }
-
-.cta p{
-    margin-bottom:23px;
+.contact-box,.form{
+padding:30px;border-radius:13px;background:#f5f8f6
 }
+.contact-box h3,.form h3{color:#126b3e;margin-bottom:18px}
+.item{margin:16px 0}
+.item strong{color:#126b3e}
 
-/* CONTACT */
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:35px;
+input,select,textarea{
+width:100%;padding:13px;margin-bottom:12px;
+border:1px solid #ddd;border-radius:7px;font-size:14px
 }
-
-.contact-box{
-    background:#f6f8f7;
-    padding:30px;
-    border-radius:13px;
-}
-
-.contact-box h3{
-    color:#126b3e;
-    margin-bottom:15px;
-}
-
-.contact-item{
-    margin:15px 0;
-}
-
-.contact-item strong{
-    color:#126b3e;
-}
-
-/* FORM */
-
-.form{
-    background:#fff;
-    padding:30px;
-    border-radius:13px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.form h3{
-    color:#126b3e;
-    margin-bottom:18px;
-}
-
-.form input,
-.form select,
-.form textarea{
-    width:100%;
-    padding:13px;
-    margin-bottom:13px;
-    border:1px solid #ddd;
-    border-radius:7px;
-    outline:none;
-    font-size:14px;
-}
-
-.form textarea{
-    height:110px;
-    resize:none;
-}
-
+textarea{height:110px;resize:none}
 .submit{
-    width:100%;
-    padding:13px;
-    background:#16834b;
-    color:#fff;
-    border:0;
-    border-radius:7px;
-    font-size:16px;
-    font-weight:bold;
+width:100%;padding:13px;border:0;border-radius:7px;
+background:#16834b;color:white;font-size:16px;font-weight:bold
 }
-
-/* FOOTER */
 
 footer{
-    background:#10251b;
-    color:#ccd5cf;
-    padding:55px 7% 20px;
+background:#10251b;color:#ccd5cf;padding:50px 7% 20px
+}
+.footer{
+display:grid;grid-template-columns:2fr 1fr 1fr;gap:45px
+}
+footer h3{color:white;margin-bottom:14px}
+footer a{display:block;color:#ccd5cf;margin:7px 0}
+.footer-logo{color:white;font-size:21px;font-weight:bold;margin-bottom:12px}
+.copy{
+border-top:1px solid #ffffff20;margin-top:30px;
+padding-top:18px;text-align:center;font-size:13px
 }
 
-.footer-grid{
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr;
-    gap:50px;
+.float{
+position:fixed;right:18px;bottom:18px;z-index:100;
+display:flex;flex-direction:column;gap:10px
 }
-
-.footer-logo{
-    font-size:21px;
-    color:#fff;
-    font-weight:bold;
-    margin-bottom:13px;
+.float a{
+width:52px;height:52px;border-radius:50%;
+display:flex;align-items:center;justify-content:center;
+color:white;font-size:23px;box-shadow:0 4px 15px #0004
 }
-
-footer h3{
-    color:#fff;
-    margin-bottom:15px;
-}
-
-footer a{
-    color:#ccd5cf;
-    display:block;
-    margin:8px 0;
-}
-
-footer p{
-    font-size:14px;
-    line-height:1.8;
-}
-
-.copyright{
-    border-top:1px solid rgba(255,255,255,.12);
-    margin-top:35px;
-    padding-top:20px;
-    text-align:center;
-    font-size:13px;
-}
-
-/* MOBILE */
+.wa{background:#25d366}
+.call{background:#16834b}
 
 @media(max-width:900px){
-
-    .topbar{
-        padding:8px 5%;
-        font-size:12px;
-    }
-
-    .menu{
-        display:none;
-    }
-
-    .navbar{
-        padding:0 5%;
-    }
-
-    .hero{
-        min-height:520px;
-        padding:50px 6%;
-    }
-
-    .hero h1{
-        font-size:38px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
-    .section{
-        padding:55px 6%;
-    }
-
-    .about,
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
-    .why-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .services-grid{
-        grid-template-columns:1fr;
-    }
-
-    .plan-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .steps{
-        grid-template-columns:1fr 1fr;
-        row-gap:35px;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
-        gap:30px;
-    }
+.menu{display:none}
+.hero{padding:55px 6%;min-height:520px}
+.hero h1{font-size:40px}
+.stats{padding:0 5%}
+.statsbox{grid-template-columns:1fr 1fr;gap:18px}
+.stat:nth-child(2){border:0}
+.section{padding:55px 6%}
+.about,.contact{grid-template-columns:1fr}
+.cards{grid-template-columns:1fr 1fr}
+.services{grid-template-columns:1fr}
+.plans{grid-template-columns:1fr 1fr}
+.steps{grid-template-columns:1fr 1fr}
+.footer{grid-template-columns:1fr}
 }
 
 @media(max-width:500px){
-
-    .topbar{
-        justify-content:center;
-    }
-
-    .topbar .address{
-        display:none;
-    }
-
-    .logo-text{
-        font-size:17px;
-    }
-
-    .hero h1{
-        font-size:34px;
-    }
-
-    .why-grid,
-    .plan-grid,
-    .steps{
-        grid-template-columns:1fr;
-    }
-
-    .section-title h2,
-    .about-content h2,
-    .cta h2{
-        font-size:28px;
-    }
+.top{justify-content:center}
+.top .address{display:none}
+.logo{font-size:16px}
+.hero h1{font-size:34px}
+.hero p{font-size:16px}
+.statsbox{grid-template-columns:1fr 1fr;padding:18px 10px}
+.stat b{font-size:21px}
+.cards,.plans,.steps{grid-template-columns:1fr}
+.title h2,.about h2,.cta h2,.subsidy h2{font-size:28px}
 }
-
 </style>
 </head>
 
 <body>
 
-<!-- TOP BAR -->
-
-<div class="topbar">
-    <div>📧 farhanmoha786@gmail.com</div>
-    <div class="address">📍 Shahjahanpur, Uttar Pradesh</div>
+<div class="top">
+<div>📧 farhanmoha786@gmail.com</div>
+<div class="address">📍 Shahjahanpur, Uttar Pradesh</div>
 </div>
 
+<header class="nav">
+<a href="#home" class="logo">
+<i>☀️</i>
+<div>Ummehani <span>Solar System</span></div>
+</a>
 
-<!-- NAVIGATION -->
-
-<header class="navbar">
-
-    <a href="#home" class="logo">
-
-        <div class="logo-icon">☀️</div>
-
-        <div class="logo-text">
-            Ummehani <span>Solar System</span>
-        </div>
-
-    </a>
-
-    <nav class="menu">
-
-        <a href="#home">Home</a>
-
-        <a href="#about">About Us</a>
-
-        <a href="#services">Services</a>
-
-        <a href="#plans">Solar Plans</a>
-
-        <a href="#contact">Contact</a>
-
-        <a href="#enquiry" class="enquiry-btn">
-            Get Quote
-        </a>
-
-    </nav>
-
+<nav class="menu">
+<a href="#home">Home</a>
+<a href="#about">About Us</a>
+<a href="#services">Services</a>
+<a href="#plans">Solar Plans</a>
+<a href="#contact">Contact</a>
+<a href="#enquiry" class="quote">Get Quote</a>
+</nav>
 </header>
 
-
-<!-- HERO -->
-
 <section class="hero" id="home">
+<div class="hero-content">
 
-    <div class="hero-content">
+<div class="small">☀️ CLEAN • SMART • AFFORDABLE ENERGY</div>
 
-        <div class="hero-small">
-            ☀️ CLEAN • SMART • AFFORDABLE ENERGY
-        </div>
+<h1>
+Power Your Home With
+<span>Solar Energy</span>
+</h1>
 
-        <h1>
-            Power Your Home With
-            <span>Solar Energy</span>
-        </h1>
+<p>
+बिजली के बढ़ते खर्च से बचें। Ummehani Solar System
+के साथ अपने घर, दुकान, ऑफिस और बिज़नेस के लिए
+सही Solar Solution चुनें।
+</p>
 
-        <p>
-            Ummehani Solar System provides reliable solar
-            solutions for homes, shops, offices and businesses.
-            Save electricity cost and move towards clean energy.
-        </p>
+<div class="buttons">
+<a href="#enquiry" class="btn yellow">Get Free Quote</a>
+<a href="tel:+919999999999" class="btn white">📞 Call Now</a>
+<a href="https://wa.me/919999999999" class="btn white">💬 WhatsApp</a>
+</div>
 
-        <div class="hero-buttons">
-
-            <a href="#enquiry" class="btn btn-yellow">
-                Get Free Quote
-            </a>
-
-            <a href="https://wa.me/919999999999"
-               class="btn btn-white">
-                💬 WhatsApp Us
-            </a>
-
-        </div>
-
-    </div>
-
+</div>
 </section>
 
-
-<!-- ABOUT -->
+<div class="stats">
+<div class="statsbox">
+<div class="stat"><b>1–10+ KW</b><small>Solar Solutions</small></div>
+<div class="stat"><b>Quality</b><small>Products</small></div>
+<div class="stat"><b>Expert</b><small>Installation</small></div>
+<div class="stat"><b>Local</b><small>Shahjahanpur Service</small></div>
+</div>
+</div>
 
 <section class="section" id="about">
+<div class="about">
 
-    <div class="about">
+<div>
+<img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1000&q=85" alt="Solar Panels">
+</div>
 
-        <div class="about-image">
+<div>
+<h5>ABOUT US</h5>
+<h2>Ummehani Solar System</h2>
 
-            <img
-            src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1000&q=85"
-            alt="Solar Energy">
+<p>
+हम घर, दुकान, ऑफिस और बिज़नेस के लिए आधुनिक
+Solar Energy Solutions उपलब्ध कराने के लिए काम करते हैं।
+</p>
 
-        </div>
+<p>
+हमारा उद्देश्य अच्छी quality, उचित कीमत और बेहतर
+customer service के साथ लोगों को clean और reliable
+solar energy अपनाने में मदद करना है।
+</p>
 
-        <div class="about-content">
+<ul class="check">
+<li>✅ Quality Solar Products</li>
+<li>✅ Professional Installation</li>
+<li>✅ On-Grid, Off-Grid & Hybrid</li>
+<li>✅ Customer Support</li>
+</ul>
+</div>
 
-            <h4>ABOUT US</h4>
-
-            <h2>
-                Ummehani Solar System
-            </h2>
-
-            <p>
-                हम घर, दुकान, ऑफिस और बिज़नेस के लिए
-                आधुनिक Solar Energy Solutions उपलब्ध कराने
-                के लिए काम करते हैं।
-            </p>
-
-            <p>
-                हमारा उद्देश्य अच्छी quality, उचित कीमत और
-                बेहतर customer service के साथ लोगों को
-                clean और reliable solar energy अपनाने में मदद
-                करना है।
-            </p>
-
-            <ul class="check-list">
-
-                <li>✅ Quality Solar Products</li>
-
-                <li>✅ Professional Installation</li>
-
-                <li>✅ On-Grid, Off-Grid & Hybrid</li>
-
-                <li>✅ Customer Support</li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
+</div>
 </section>
 
+<section class="section green-section">
+<div class="title">
+<h2>Why Choose Ummehani Solar?</h2>
+<p>Solar लगाने के लिए हमें क्यों चुनें?</p>
+</div>
 
-<!-- WHY CHOOSE -->
+<div class="cards">
 
-<section class="section why">
+<div class="card">
+<div class="icon">☀️</div>
+<h3>Quality Products</h3>
+<p>भरोसेमंद और quality solar solutions.</p>
+</div>
 
-    <div class="section-title">
+<div class="card">
+<div class="icon">👨‍🔧</div>
+<h3>Expert Installation</h3>
+<p>Professional installation और setup.</p>
+</div>
 
-        <h2>Why Choose Ummehani Solar?</h2>
+<div class="card">
+<div class="icon">💰</div>
+<h3>Better Savings</h3>
+<p>बिजली के खर्च को कम करने में मदद.</p>
+</div>
 
-        <p>
-            Solar लगाने के लिए हमें क्यों चुनें?
-        </p>
+<div class="card">
+<div class="icon">🤝</div>
+<h3>Customer Support</h3>
+<p>Installation के बाद भी support.</p>
+</div>
 
-    </div>
-
-    <div class="why-grid">
-
-        <div class="why-card">
-
-            <div class="why-icon">☀️</div>
-
-            <h3>Quality Products</h3>
-
-            <p>
-                भरोसेमंद और quality solar solutions.
-            </p>
-
-        </div>
-
-        <div class="why-card">
-
-            <div class="why-icon">👨‍🔧</div>
-
-            <h3>Expert Installation</h3>
-
-            <p>
-                Professional installation और setup.
-            </p>
-
-        </div>
-
-        <div class="why-card">
-
-            <div class="why-icon">💰</div>
-
-            <h3>Better Savings</h3>
-
-            <p>
-                बिजली के खर्च को कम करने में मदद.
-            </p>
-
-        </div>
-
-        <div class="why-card">
-
-            <div class="why-icon">🤝</div>
-
-            <h3>Customer Support</h3>
-
-            <p>
-                Installation के बाद भी support.
-            </p>
-
-        </div>
-
-    </div>
-
+</div>
 </section>
-
-
-<!-- SERVICES -->
 
 <section class="section" id="services">
+<div class="title">
+<h2>Our Solar Services</h2>
+<p>आपकी जरूरत के अनुसार Solar Solutions</p>
+</div>
 
-    <div class="section-title">
+<div class="services">
 
-        <h2>Our Solar Services</h2>
+<div class="service">
+<div class="icon">☀️</div>
+<h3>On-Grid Solar</h3>
+<p>Grid-connected solar system जो electricity bill को कम करने में मदद करता है।</p>
+<a href="#enquiry">Enquire Now →</a>
+</div>
 
-        <p>
-            आपकी जरूरत के अनुसार Solar Solutions
-        </p>
+<div class="service">
+<div class="icon">🔋</div>
+<h3>Off-Grid Solar</h3>
+<p>Battery backup के साथ independent solar power solution।</p>
+<a href="#enquiry">Enquire Now →</a>
+</div>
 
-    </div>
+<div class="service">
+<div class="icon">⚡</div>
+<h3>Hybrid Solar</h3>
+<p>Solar और battery का combination backup और savings के लिए।</p>
+<a href="#enquiry">Enquire Now →</a>
+</div>
 
-    <div class="services-grid">
+<div class="service">
+<div class="icon">🏠</div>
+<h3>Home Solar</h3>
+<p>घर के लिए customized solar system installation।</p>
+<a href="#enquiry">Enquire Now →</a>
+</div>
 
-        <div class="service-card">
+<div class="service">
+<div class="icon">🏪</div>
+<h3>Commercial Solar</h3>
+<p>Shops, offices और businesses के लिए solar solutions।</p>
+<a href="#enquiry">Enquire Now →</a>
+</div>
 
-            <div class="service-icon">☀️</div>
+<div class="service">
+<div class="icon">🔧</div>
+<h3>Solar Maintenance</h3>
+<p>Solar system की maintenance और service support।</p>
+<a href="#enquiry">Enquire Now →</a>
+</div>
 
-            <h3>On-Grid Solar</h3>
-
-            <p>
-                Grid-connected solar system जो electricity
-                bill को कम करने में मदद करता है।
-            </p>
-
-            <a href="#enquiry" class="read-more">
-                Enquire Now →
-            </a>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <div class="service-icon">🔋</div>
-
-            <h3>Off-Grid Solar</h3>
-
-            <p>
-                Battery backup के साथ independent solar
-                power solution।
-            </p>
-
-            <a href="#enquiry" class="read-more">
-                Enquire Now →
-            </a>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <div class="service-icon">⚡</div>
-
-            <h3>Hybrid Solar</h3>
-
-            <p>
-                Solar और battery का combination,
-                backup और savings के लिए।
-            </p>
-
-            <a href="#enquiry" class="read-more">
-                Enquire Now →
-            </a>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <div class="service-icon">🏠</div>
-
-            <h3>Home Solar</h3>
-
-            <p>
-                घर के लिए customized solar system
-                installation।
-            </p>
-
-            <a href="#enquiry" class="read-more">
-                Enquire Now →
-            </a>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <div class="service-icon">🏪</div>
-
-            <h3>Commercial Solar</h3>
-
-            <p>
-                Shops, offices और businesses के लिए
-                solar solutions।
-            </p>
-
-            <a href="#enquiry" class="read-more">
-                Enquire Now →
-            </a>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <div class="service-icon">🔧</div>
-
-            <h3>Solar Maintenance</h3>
-
-            <p>
-                Solar system की maintenance और
-                service support।
-            </p>
-
-            <a href="#enquiry" class="read-more">
-                Enquire Now →
-            </a>
-
-        </div>
-
-    </div>
-
+</div>
 </section>
 
+<section class="subsidy">
+<h2>☀️ Solar पर Smart Investment करें</h2>
 
-<!-- PLANS -->
+<p>
+अपने घर की बिजली जरूरत के हिसाब से सही Solar Capacity
+चुनने के लिए आज ही quotation लें।
+</p>
 
-<section class="section plans" id="plans">
-
-    <div class="section-title">
-
-        <h2>Solar Plans</h2>
-
-        <p>
-            अपनी जरूरत के अनुसार capacity चुनें
-        </p>
-
-    </div>
-
-    <div class="plan-grid">
-
-        <div class="plan">
-
-            <h3>1 KW</h3>
-
-            <div class="plan-price">
-                Best Price
-            </div>
-
-            <ul>
-                <li>✓ Solar Panels</li>
-                <li>✓ Inverter</li>
-                <li>✓ Installation</li>
-                <li>✓ Support</li>
-            </ul>
-
-            <a href="#enquiry" class="plan-btn">
-                Get Quote
-            </a>
-
-        </div>
-
-
-        <div class="plan">
-
-            <h3>2 KW</h3>
-
-            <div class="plan-price">
-                Best Price
-            </div>
-
-            <ul>
-                <li>✓ Solar Panels</li>
-                <li>✓ Inverter</li>
-                <li>✓ Installation</li>
-                <li>✓ Support</li>
-            </ul>
-
-            <a href="#enquiry" class="plan-btn">
-                Get Quote
-            </a>
-
-        </div>
-
-
-        <div class="plan">
-
-            <h3>3 KW</h3>
-
-            <div class="plan-price">
-                Best Price
-            </div>
-
-            <ul>
-                <li>✓ Quality Panels</li>
-                <li>✓ Solar Inverter</li>
-                <li>✓ Installation</li>
-                <li>✓ Support</li>
-            </ul>
-
-            <a href="#enquiry" class="plan-btn">
-                Get Quote
-            </a>
-
-        </div>
-
-
-        <div class="plan">
-
-            <h3>5 KW+</h3>
-
-            <div class="plan-price">
-                Custom Quote
-            </div>
-
-            <ul>
-                <li>✓ High Capacity</li>
-                <li>✓ Quality Equipment</li>
-                <li>✓ Installation</li>
-                <li>✓ Support</li>
-            </ul>
-
-            <a href="#enquiry" class="plan-btn">
-                Get Quote
-            </a>
-
-        </div>
-
-    </div>
-
+<a href="#enquiry" class="btn yellow">
+Get Solar Quote
+</a>
 </section>
 
+<section class="section green-section" id="plans">
 
-<!-- HOW IT WORKS -->
+<div class="title">
+<h2>Popular Solar Plans</h2>
+<p>अपनी जरूरत के अनुसार capacity चुनें</p>
+</div>
+
+<div class="plans">
+
+<div class="plan">
+<h3>1 KW</h3>
+<div class="price">Get Quote</div>
+<ul>
+<li>✓ Solar Panels</li>
+<li>✓ Inverter</li>
+<li>✓ Installation</li>
+<li>✓ Support</li>
+</ul>
+<a href="#enquiry">Get Quote</a>
+</div>
+
+<div class="plan">
+<h3>2 KW</h3>
+<div class="price">Get Quote</div>
+<ul>
+<li>✓ Solar Panels</li>
+<li>✓ Inverter</li>
+<li>✓ Installation</li>
+<li>✓ Support</li>
+</ul>
+<a href="#enquiry">Get Quote</a>
+</div>
+
+<div class="plan">
+<h3>3 KW</h3>
+<div class="price">Get Quote</div>
+<ul>
+<li>✓ Quality Panels</li>
+<li>✓ Solar Inverter</li>
+<li>✓ Installation</li>
+<li>✓ Support</li>
+</ul>
+<a href="#enquiry">Get Quote</a>
+</div>
+
+<div class="plan">
+<h3>5 KW+</h3>
+<div class="price">Custom Quote</div>
+<ul>
+<li>✓ High Capacity</li>
+<li>✓ Quality Equipment</li>
+<li>✓ Installation</li>
+<li>✓ Support</li>
+</ul>
+<a href="#enquiry">Get Quote</a>
+</div>
+
+</div>
+</section>
 
 <section class="section">
 
-    <div class="section-title">
+<div class="title">
+<h2>How Solar Installation Works</h2>
+<p>Simple 4 Step Process</p>
+</div>
 
-        <h2>How Solar Installation Works</h2>
+<div class="steps">
 
-        <p>
-            Simple 4 Step Process
-        </p>
+<div class="step">
+<div class="number">1</div>
+<h3>Contact Us</h3>
+<p>अपनी solar requirement हमें बताएं।</p>
+</div>
 
-    </div>
+<div class="step">
+<div class="number">2</div>
+<h3>Site Survey</h3>
+<p>आपकी property और electricity जरूरत को समझा जाएगा।</p>
+</div>
 
-    <div class="steps">
+<div class="step">
+<div class="number">3</div>
+<h3>Installation</h3>
+<p>Solar system की professional installation।</p>
+</div>
 
-        <div class="step">
+<div class="step">
+<div class="number">4</div>
+<h3>Start Saving</h3>
+<p>Solar energy का इस्तेमाल शुरू करें।</p>
+</div>
 
-            <div class="step-number">1</div>
-
-            <h3>Contact Us</h3>
-
-            <p>
-                अपनी solar requirement हमें बताएं।
-            </p>
-
-        </div>
-
-
-        <div class="step">
-
-            <div class="step-number">2</div>
-
-            <h3>Site Survey</h3>
-
-            <p>
-                आपकी property और electricity जरूरत
-                को समझा जाएगा।
-            </p>
-
-        </div>
-
-
-        <div class="step">
-
-            <div class="step-number">3</div>
-
-            <h3>Installation</h3>
-
-            <p>
-                Solar system की professional installation।
-            </p>
-
-        </div>
-
-
-        <div class="step">
-
-            <div class="step-number">4</div>
-
-            <h3>Start Saving</h3>
-
-            <p>
-                Solar energy का इस्तेमाल शुरू करें।
-            </p>
-
-        </div>
-
-    </div>
-
+</div>
 </section>
-
-
-<!-- CTA -->
 
 <section class="cta">
-
-    <h2>
-        Ready to Switch to Solar?
-    </h2>
-
-    <p>
-        आज ही Ummehani Solar System से संपर्क करें।
-    </p>
-
-    <a href="#enquiry" class="btn btn-yellow">
-        Get Free Solar Quote
-    </a>
-
+<h2>Ready to Switch to Solar?</h2>
+<p>आज ही Ummehani Solar System से संपर्क करें।</p>
+<a href="#enquiry" class="btn yellow">Get Free Solar Quote</a>
 </section>
-
-
-<!-- CONTACT -->
 
 <section class="section" id="contact">
 
-    <div class="section-title">
+<div class="title">
+<h2>Contact Us</h2>
+<p>Solar quotation और जानकारी के लिए संपर्क करें</p>
+</div>
 
-        <h2>Contact Us</h2>
+<div class="contact">
 
-        <p>
-            Solar quotation और जानकारी के लिए संपर्क करें
-        </p>
+<div class="contact-box">
 
-    </div>
+<h3>Ummehani Solar System</h3>
 
-    <div class="contact-grid">
+<div class="item">
+<strong>📍 Address</strong><br>
+Moh. Lodhipur, District Shahjahanpur,
+Uttar Pradesh, India
+</div>
 
-        <div class="contact-box">
+<div class="item">
+<strong>📧 Email</strong><br>
+<a href="mailto:farhanmoha786@gmail.com">
+farhanmoha786@gmail.com
+</a>
+</div>
 
-            <h3>Ummehani Solar System</h3>
+<div class="item">
+<strong>💬 WhatsApp</strong><br>
+<a href="https://wa.me/919999999999">
+Chat on WhatsApp
+</a>
+</div>
 
-            <div class="contact-item">
+</div>
 
-                <strong>📍 Address</strong>
+<div class="form" id="enquiry">
 
-                <br>
+<h3>Send Solar Enquiry</h3>
 
-                Moh. Lodhipur,
-                District Shahjahanpur,
-                Uttar Pradesh, India
+<form action="https://formsubmit.co/farhanmoha786@gmail.com" method="POST">
 
-            </div>
+<input type="hidden" name="_subject" value="New Solar Enquiry - Ummehani Solar System">
 
-            <div class="contact-item">
+<input type="hidden" name="_captcha" value="false">
 
-                <strong>📧 Email</strong>
+<input type="text" name="name" placeholder="Your Name" required>
 
-                <br>
+<input type="tel" name="mobile" placeholder="Mobile Number" required>
 
-                <a href="mailto:farhanmoha786@gmail.com">
-                    farhanmoha786@gmail.com
-                </a>
+<select name="solar_capacity" required>
+<option value="">Select Solar Capacity</option>
+<option>1 KW</option>
+<option>2 KW</option>
+<option>3 KW</option>
+<option>5 KW</option>
+<option>10 KW+</option>
+</select>
 
-            </div>
+<textarea name="message" placeholder="अपनी जरूरत बताएं..."></textarea>
 
-            <div class="contact-item">
+<button class="submit" type="submit">
+Submit Enquiry
+</button>
 
-                <strong>💬 WhatsApp</strong>
+</form>
+</div>
 
-                <br>
-
-                <a href="https://wa.me/919999999999">
-                    Chat on WhatsApp
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- ENQUIRY FORM -->
-
-        <div class="form" id="enquiry">
-
-            <h3>Send Solar Enquiry</h3>
-
-            <form
-            action="https://formsubmit.co/farhanmoha786@gmail.com"
-            method="POST">
-
-                <input
-                type="hidden"
-                name="_subject"
-                value="New Solar Enquiry - Ummehani Solar System">
-
-                <input
-                type="hidden"
-                name="_captcha"
-                value="false">
-
-                <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                required>
-
-                <input
-                type="tel"
-                name="mobile"
-                placeholder="Mobile Number"
-                required>
-
-                <select name="solar_capacity" required>
-
-                    <option value="">
-                        Select Solar Capacity
-                    </option>
-
-                    <option>1 KW</option>
-                    <option>2 KW</option>
-                    <option>3 KW</option>
-                    <option>5 KW</option>
-                    <option>10 KW+</option>
-
-                </select>
-
-                <textarea
-                name="message"
-                placeholder="अपनी जरूरत बताएं..."></textarea>
-
-                <button
-                type="submit"
-                class="submit">
-                    Submit Enquiry
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
+</div>
 </section>
-
-
-<!-- FOOTER -->
 
 <footer>
 
-    <div class="footer-grid">
+<div class="footer">
 
-        <div>
+<div>
+<div class="footer-logo">☀️ Ummehani Solar System</div>
+<p>
+Smart, clean और reliable Solar Energy Solutions
+for homes, shops and businesses.
+</p>
+</div>
 
-            <div class="footer-logo">
-                ☀️ Ummehani Solar System
-            </div>
+<div>
+<h3>Quick Links</h3>
+<a href="#home">Home</a>
+<a href="#about">About Us</a>
+<a href="#services">Services</a>
+<a href="#plans">Solar Plans</a>
+<a href="#contact">Contact</a>
+</div>
 
-            <p>
-                Smart, clean और reliable Solar Energy
-                Solutions for homes, shops and businesses.
-            </p>
+<div>
+<h3>Contact Us</h3>
+<p>📧 farhanmoha786@gmail.com</p>
+<p>📍 Moh. Lodhipur,<br>District Shahjahanpur,<br>Uttar Pradesh</p>
+</div>
 
-        </div>
+</div>
 
-
-        <div>
-
-            <h3>Quick Links</h3>
-
-            <a href="#home">Home</a>
-
-            <a href="#about">About Us</a>
-
-            <a href="#services">Our Services</a>
-
-            <a href="#plans">Solar Plans</a>
-
-            <a href="#contact">Contact Us</a>
-
-        </div>
-
-
-        <div>
-
-            <h3>Contact Us</h3>
-
-            <p>
-                📧 farhanmoha786@gmail.com
-            </p>
-
-            <p>
-                📍 Moh. Lodhipur,<br>
-                District Shahjahanpur,<br>
-                Uttar Pradesh
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="copyright">
-
-        © 2026 Ummehani Solar System.
-        All Rights Reserved.
-
-    </div>
+<div class="copy">
+© 2026 Ummehani Solar System. All Rights Reserved.
+</div>
 
 </footer>
+
+<div class="float">
+<a class="wa" href="https://wa.me/919999999999">💬</a>
+<a class="call" href="tel:+919999999999">📞</a>
+</div>
 
 </body>
 </html>
